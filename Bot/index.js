@@ -19,6 +19,17 @@ bot.on("message", async message => {
 
     var prefix = botConfig.prefix;
 
+    var messageArray = message.content.split(" ");
+
+    var command = messageArray[0];
+
+    var arguments = messageArray.slice(1);
+
+    if( command === `${prefix}serverlog`){
+
+        return message.channel.send("Ik en <@801828642094972950> zullen aan het einde van de dag een server log vrijgeven! Heb geduld a.u.b.");
+    }
+
 });
 
 bot.login(process.env.token);
