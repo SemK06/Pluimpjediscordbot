@@ -32,7 +32,8 @@ bot.on("message", async message => {
 
     if( command === `${prefix}faq`){
         
-        var botEmbed = new discord.RichEmbed()
+        var embed = new Discord.MessageEmbed()
+            .setAuthor(message.author.username)
             .setDescription("FAQ Joinen")
             .setColor("#ffa500")
             .addField("Hoe join ik?", "Je kan momenteel nog **niet** joinen")
