@@ -30,6 +30,15 @@ bot.on("message", async message => {
         return message.channel.send("Ik en <@801828642094972950> zullen aan het einde van de dag een server log vrijgeven! Heb geduld a.u.b.");
     }
 
+    if( command === `${prefix}faq joinen`){
+        
+        var botEmbed = new discord.RichEmbed()
+            .setDescription("FAQ Joinen")
+            .setColor("#ffa500")
+            .addField("Hoe join ik?", "Je kan momenteel nog **niet** joinen")
+            .addField("Met vriendelijke groet", bot.user.username)
+    }
+
 });
 
 bot.login(process.env.token);
