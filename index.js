@@ -11,4 +11,4 @@ bot.on("ready", async () => {
 })
 
 
-bot.login(botConfig.token);
+bot.login(process.env.token);
