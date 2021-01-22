@@ -3,6 +3,8 @@ const botConfig = require("./botconfig.json");
 
 const bot = new discord.Client();
 
+const discord = require(discord.js);
+
 bot.on("ready", async () => {
 
     console.log(`${bot.user.username} is wakker!`);
@@ -30,15 +32,14 @@ bot.on("message", async message => {
         return message.channel.send("Ik en <@801828642094972950> zullen aan het einde van de dag een server log vrijgeven! Heb geduld a.u.b.");
     }
 
-    if( command === `${prefix}faq`){
+    if( command === `${prefix}joinen`){
         
-        var embed = new Discord.MessageEmbed()
-            .setAuthor(message.author.username)
-            .setDescription("FAQ Joinen")
-            .setColor("#ffa500")
-            .addField("Hoe join ik?", "Je kan momenteel nog **niet** joinen")
-            .addField("Met vriendelijke groet", bot.user.username)
-    }
+                const exampleEmbed = new Discord.MessageEmbed()
+            .setTitle('Some title')
+            .setDescription('Description after the edit');
+
+        message.edit(exampleEmbed);
+            }
 
 });
 
