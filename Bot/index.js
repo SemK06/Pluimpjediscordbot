@@ -34,10 +34,7 @@ bot.on("message", async message => {
 	.setColor('#0099ff')
 	.setTitle('Joinen')
 	.setAuthor('Pluimpje')
-	.setDescription('Hoe join ik?')
-	.addFields(
-		{ name: 'Joinen:', value: 'Je kan momenteel nog niet joinen helaas.' },
-    )
+	.setDescription('Momenteel kun je helaas nog niet joinen!')
 message.channel.send(exampleEmbed);
 
 });
