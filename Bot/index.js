@@ -31,9 +31,8 @@ bot.on("message", async message => {
     }
 
     const exampleEmbed = new discord.MessageEmbed()
-	.setColor('#0099ff')
+	.setColor('#ffa500')
 	.setTitle('Joinen')
-	.setAuthor('Pluimpje')
 	.setDescription('Momenteel kun je helaas nog niet joinen!')
 message.channel.send(exampleEmbed);
 
