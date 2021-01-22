@@ -3,8 +3,6 @@ const botConfig = require("./botconfig.json");
 
 const bot = new discord.Client();
 
-const discord = require(discord.js);
-
 bot.on("ready", async () => {
 
     console.log(`${bot.user.username} is wakker!`);
