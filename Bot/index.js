@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+const discord = require("discord.js");
 const botConfig = require("./botconfig.json");
 
 const bot = new discord.Client();
@@ -30,7 +30,7 @@ bot.on("message", async message => {
         return message.channel.send("Ik en <@801828642094972950> zullen aan het einde van de dag een server log vrijgeven! Heb geduld a.u.b.");
     }
 
-    const exampleEmbed = new Discord.MessageEmbed()
+    const exampleEmbed = new discord.MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Some title')
 	.setURL('https://discord.js.org/')
