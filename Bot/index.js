@@ -32,7 +32,7 @@ bot.on("message", async message => {
 
     if( command === `${prefix}joinen`){
         
-                const exampleEmbed = new Discord.MessageEmbed()
+                const discord = new Discord.MessageEmbed()
             .setTitle('Some title')
             .setDescription('Description after the edit');
 
